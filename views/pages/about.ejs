@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+  </head>
+  <body class="container">
+    <header><%- include('../partials/header'); %></header>
+
+    <main>
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="jumbotron">
+            <h1>Welcome to dashboard</h1>
+          </div>
+        </div>
+
+        <div
+          class="col-sm-4"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <form action="/logout" method="POST">
+            <button type="submit" class="btn btn-primary">Logout</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer><%- include('../partials/footer'); %></footer>
+  </body>
+</html>
